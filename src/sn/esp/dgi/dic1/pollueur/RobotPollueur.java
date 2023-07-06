@@ -1,7 +1,7 @@
-package sn.esp.dgi.dci1.pollueur;
+package sn.esp.dgi.dic1.pollueur;
 
-import  sn.esp.dgi.dci1.robot.Robot;
-import sn.esp.dgi.dci1.monde.Monde;
+import sn.esp.dgi.dic1.monde.Monde;
+import sn.esp.dgi.dic1.robot.Robot;
 
 public abstract class RobotPollueur extends Robot{
     protected RobotPollueur(int x, int y, Monde m) {

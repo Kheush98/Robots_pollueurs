@@ -1,7 +1,7 @@
-package sn.esp.dgi.dci1.toutDroit;
+package sn.esp.dgi.dic1.toutDroit;
 
-import sn.esp.dgi.dci1.monde.Monde;
-import sn.esp.dgi.dci1.pollueur.RobotPollueur;
+import sn.esp.dgi.dic1.monde.Monde;
+import sn.esp.dgi.dic1.pollueur.RobotPollueur;
 
 public class PollueurToutDroit extends RobotPollueur{
     private int colDepart;

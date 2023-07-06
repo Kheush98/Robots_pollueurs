@@ -1,7 +1,8 @@
-package sn.esp.dgi.dci1.robot;
+package sn.esp.dgi.dic1.robot;
 
-import  sn.esp.dgi.dci1.monde.Monde;
 import java.lang.Math;
+
+import sn.esp.dgi.dic1.monde.Monde;
 
 public abstract class Robot {
     protected int posx;

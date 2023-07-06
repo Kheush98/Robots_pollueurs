@@ -1,4 +1,4 @@
-package sn.esp.dgi.dci1.monde;
+package sn.esp.dgi.dic1.monde;
 
 public class Monde {
     private int nbL; 
@@ -18,18 +18,18 @@ public class Monde {
 
     
     public String toString() {
-       String result = "";
-       for (int i = 0; i < nbL; i++) {
-          for (int j = 0; j < nbC; j++) {
-	if (matrice[i][j]) {
-	    result += "o";
-	} else {
-	     result += ".";
-	}
-          }
-          result += "\n";
-      }
-      return result;
+        String result = "";
+        for (int i = 0; i < nbL; i++) {
+            for (int j = 0; j < nbC; j++) {
+                if (matrice[i][j]) {
+                    result += "o";
+                } else {
+                    result += ".";
+                }
+            }
+            result += "\n";
+        }
+        return result;
    }
 
     public void setNbC(int nbC) {this.nbC = nbC;}
@@ -41,12 +41,16 @@ public class Monde {
     public void metPapierGras(int i, int j) {
         if (validerIndices(i, j)) {
             matrice[i][j] = true;
+        } else {
+            System.out.println("Valeur(s) choisie(s) incorrecte(s)");
         }
     }
 
     public void prendPapierGras(int i, int j) {
         if (validerIndices(i, j)) {
             matrice[i][j] = false;
+        } else {
+            System.out.println("Valeur(s) choisie(s) incorrecte(s)");
         }
     }
 

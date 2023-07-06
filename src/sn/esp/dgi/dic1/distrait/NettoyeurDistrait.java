@@ -1,7 +1,7 @@
-package sn.esp.dgi.dci1.distrait;
+package sn.esp.dgi.dic1.distrait;
 
-import sn.esp.dgi.dci1.monde.Monde;
-import sn.esp.dgi.dci1.nettoyeur.RobotNettoyeur;
+import sn.esp.dgi.dic1.monde.Monde;
+import sn.esp.dgi.dic1.nettoyeur.RobotNettoyeur;
 
 public class NettoyeurDistrait extends RobotNettoyeur{
 
@@ -16,8 +16,10 @@ public class NettoyeurDistrait extends RobotNettoyeur{
             if (j == 0) {
                 while (j < m.getNbC()) {
                     posy = j;
-                    if (m.estSale(posx, posy)) {
+                    if (m.estSale(i, j)) {
                         if (compteur % 2 == 0) {
+                            posx = i;
+                            posy = j;
                             nettoyer();
                         }
                         compteur++;
@@ -27,8 +29,10 @@ public class NettoyeurDistrait extends RobotNettoyeur{
             } else {
                 while (j > 0) {
                     posy = j;
-                    if (m.estSale(posx, posy)) {
+                    if (m.estSale(i, j)) {
                         if (compteur % 2 == 0) {
+                            posx = i;
+                            posy = j;
                             nettoyer();
                         }
                         compteur++;

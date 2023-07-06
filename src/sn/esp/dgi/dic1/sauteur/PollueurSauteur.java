@@ -1,7 +1,7 @@
-package sn.esp.dgi.dci1.sauteur;
+package sn.esp.dgi.dic1.sauteur;
 
-import sn.esp.dgi.dci1.monde.Monde;
-import sn.esp.dgi.dci1.robot.Robot;
+import sn.esp.dgi.dic1.monde.Monde;
+import sn.esp.dgi.dic1.robot.Robot;
 
 public class PollueurSauteur extends Robot{
 
