@@ -12,12 +12,12 @@ public class RobotNettoyeur extends Robot {
     public void nettoyer() {
         m.prendPapierGras(posx, posy);
     }
+
     public void parcourir() {
         int j = 0;
         for (int i = 0; i < m.getNbL(); i++) {
-            if (j == 0) {
+            if (i % 2 == 0) {
                 while (j < m.getNbC()) {
-                    posy = j;
                     if (m.estSale(i, j)) {
                         posx = i;
                         posy = j;
@@ -26,8 +26,7 @@ public class RobotNettoyeur extends Robot {
                     j++;
                 }
             } else {
-                while (j > 0) {
-                    posy = j;
+                while (j >= 0) {
                     if (m.estSale(i, j)) {
                         posx = i;
                         posy = j;
