@@ -1,7 +1,6 @@
 package sn.esp.dgi.dic1.robot;
 
 import java.lang.Math;
-
 import sn.esp.dgi.dic1.monde.Monde;
 
 public abstract class Robot {
